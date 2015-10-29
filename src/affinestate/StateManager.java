@@ -2,14 +2,25 @@ package affinestate;
 
 import java.util.HashMap;
 
-public class StateManager<T extends State> extends HashMap<String, T> {
-	/**
-	 * 
-	 */
-
+/**
+ * Core state manager class
+ * 
+ * @author pentaphobe
+ *
+ * @param <T> The base state type for this manager
+ */
+public class StateManager<T extends State> extends HashMap<String, T> implements CoreStateEvents {
 	private static final long serialVersionUID = 1L;
-	public T currentState;
-	public T nextState;
+	
+	/**
+	 * The current state that we are in (can be null)
+	 */
+	protected T currentState;
+	
+	/**
+	 * The proposed state we'll transition into on next update (can be null)
+	 */
+	protected T nextState;
 
 	public StateManager() {
 		super();

@@ -24,6 +24,7 @@ abstract public class BasicState<SM extends StateManager<?>> implements State<SM
 		this.name = stateName;
 	}
 	
+	@Override
 	public SM getOwner() {
 		return owner;
 	}
