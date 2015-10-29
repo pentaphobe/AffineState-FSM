@@ -69,4 +69,16 @@ public class StateManager<T extends State> extends HashMap<String, T> implements
 		newState.setName(stateName);
 		return newState;
 	}
+
+	@Override
+	public void onEnter() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onExit() {
+		// TODO Auto-generated method stub
+		
+	}
 }

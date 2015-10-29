@@ -21,7 +21,7 @@ void draw() {
 }
 
 void shadowText(String txt, float x, float y) {
-  fill(64, 64);
+  fill(64);
   rect(x - 20, y - 20, x + textWidth(txt) + 20, 30);
   fill(0);
   textSize(22);

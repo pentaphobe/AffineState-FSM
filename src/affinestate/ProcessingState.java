@@ -1,5 +1,4 @@
 package affinestate;
-import processing.core.*;
 
 abstract public class ProcessingState extends BasicState<ProcessingStateManager> {
   abstract public void draw();

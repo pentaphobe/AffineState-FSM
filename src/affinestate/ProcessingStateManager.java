@@ -1,7 +1,6 @@
 package affinestate;
 
-import affinestate.ProcessingState;
-import processing.core.*;
+import processing.core.PApplet;
 import processing.event.KeyEvent;
 import processing.event.MouseEvent;
 

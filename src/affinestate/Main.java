@@ -34,7 +34,7 @@
 package affinestate;
 
 
-import processing.core.*;
+import processing.core.PApplet;
 
 /**
  * This is a template class and can be used to start a new processing library or tool.
